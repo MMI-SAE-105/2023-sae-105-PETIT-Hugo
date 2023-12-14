@@ -2,9 +2,7 @@ body {
     width: 100%;
 }
 
-img {
+.accueil__photo {
     width: 100%;
     height: auto;
-    display: block;
-    margin: 0 auto;
 }
