@@ -39,4 +39,60 @@
             </nav>
             <img src="../public/icons/Logo.svg" alt="logo" />
         </div>
-    </main>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/Hancock1.webp" alt="image hancock 1" class="carrousel_ecran--image">
+                        <figcaption>Swipez pour voir plus</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/Hancock2.webp" alt="image hancock 2" class="carrousel_ecran--image">
+                        <figcaption>Swipez pour voir plus</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/Hancock3.webp" alt="image hancock 3" class="carrousel_ecran--image">
+                        <figcaption>Visitez l'expo pour voir plus !</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>L'oeuvre</h2>
+            <p>
+            La Hancock Tower, rebaptisée 200 Clarendon, demeure un pilier emblématique du panorama urbain de Boston, fruit du
+            travail visionnaire d'I. M. Pei. Construite en 1976, cette tour de 60 étages allie élégance et ingéniosité
+            architecturale. Pei a innové en utilisant du verre réfléchissant et en jouant avec les angles pour créer une structure
+            emblématique, à la fois imposante et gracieuse. La Hancock Tower incarne l'audace de Pei, définissant ainsi le skyline
+            de Boston tout en capturant l'admiration de par sa conception novatrice.
+            </p>
+        </div>
+        <div>
+            <h2>Map</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11794.744168242101!2d-71.0941793128418!3d42.3492166!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37a0ceab89c15%3A0x930af8311decc33a!2sJohn%20Hancock%20Tower!5e0!3m2!1sfr!2sfr!4v1702588011840!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Billeterie</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="../public/icons/Logo.svg" alt="logo" />
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au dépatement MMI Montbéliard</p>
+            <img src="../public/icons/LogoMMI.svg" alt="logo" />
+        
+        </footer>
+    </body>
+        
+</html>
