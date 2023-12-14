@@ -6,11 +6,9 @@
 
 .carrousel_ecran--image {
     /* image responsive, largeur maxi */
-    max-width: 80%;
+    max-width: 90%;
     /* hauteur "auto" */
     height: auto;
-    
-
 
 }
 
@@ -30,7 +28,8 @@
     flex: none;
     /* permet de garder toute la largeur du parent */
     width: 100%;
-    scroll-snap-align: start
+    scroll-snap-align: start;
+
 }
 
 .carrousel_ecran figure {
