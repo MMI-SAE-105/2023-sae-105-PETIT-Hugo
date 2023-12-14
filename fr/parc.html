@@ -39,4 +39,60 @@
             </nav>
             <img src="../public/icons/Logo.svg" alt="logo" />
         </div>
-    </main>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/parc1.webp" alt="image parc 1" class="carrousel_ecran--image">
+                        <figcaption>Swipez pour voir plus</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/parc2.webp" alt="image parc 2" class="carrousel_ecran--image">
+                        <figcaption>Swipez pour voir plus</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/parc3.webp" alt="image parc 3" class="carrousel_ecran--image">
+                        <figcaption>Visitez l'expo pour voir plus !</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>L'oeuvre</h2>
+            <p>
+                Le Parc Xiangshan à Pékin, remodelé par I. M. Pei dans les années 1980, incarne une fusion exceptionnelle entre la
+                tradition chinoise et la modernité architecturale. Pei a subtilement retravaillé les jardins classiques de la dynastie
+                Qing, y introduisant des éléments contemporains. Cette transformation a préservé l'essence culturelle du parc tout en
+                offrant une expérience revitalisée aux visiteurs. Le Parc Xiangshan demeure ainsi un témoignage éloquent de la capacité
+                de Pei à conjuguer le passé et le présent, enrichissant ainsi le patrimoine culturel de Pékin.
+            </p>
+        </div>
+        <div>
+            <h2>Map</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12227.120801346908!2d116.18460025909056!3d39.99101704135577!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x35f05a45c7dd42a3%3A0xcc9203570a4b767a!2sFragrant%20Hills%20Park%20%EF%BC%88East%20Gate%202%EF%BC%89!5e0!3m2!1sfr!2sfr!4v1702588837929!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        </main>
+
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Billeterie</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="../public/icons/Logo.svg" alt="logo" />
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au dépatement MMI Montbéliard</p>
+            <img src="../public/icons/LogoMMI.svg" alt="logo" />
+        
+        </footer>
+</body>
+</html>
