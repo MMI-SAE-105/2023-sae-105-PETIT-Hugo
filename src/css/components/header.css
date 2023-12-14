@@ -2,4 +2,9 @@
     width: 390px;
     height: 101px;
     flex-shrink: 0;
+    background-color: #FEFEFE;
+    display: flex;
+    align-items: center;
+
 }
+
