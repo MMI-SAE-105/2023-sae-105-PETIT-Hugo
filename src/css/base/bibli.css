@@ -6,11 +6,11 @@
 
 .carrousel_ecran--image {
     /* image responsive, largeur maxi */
-    max-width: 100%;
+    max-width: 80%;
     /* hauteur "auto" */
     height: auto;
-    border-radius: 20px;
-    border: 4px solid #5A2E4E;
+    
+
 
 }
 
