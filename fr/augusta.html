@@ -39,6 +39,61 @@
             </nav>
             <img src="../public/icons/Logo.svg" alt="logo" />
         </div>
-    </main>
+                </div>
+                <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+                    <div class="carrousel_parent-ecrans" x-ref="parent"
+                        @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                        <div id="ecran-1" class="carrousel_ecran">
+                            <figure>
+                                <img src="../public/img/Augusta1.webp" alt="image augusta 1" class="carrousel_ecran--image">
+                                <figcaption>Swipez pour voir plus</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-2" class="carrousel_ecran">
+                            <figure>
+                                <img src="../public/img/Augusta2.webp" alt="image augusta 2" class="carrousel_ecran--image">
+                                <figcaption>Swipez pour voir plus</figcaption>
+                            </figure>
+                        </div>
+                        <div id="ecran-3" class="carrousel_ecran">
+                            <figure>
+                                <img src="../public/img/Augusta3.webp" alt="image augusta 3" class="carrousel_ecran--image">
+                                <figcaption>Visitez l'expo pour voir plus !</figcaption>
+                            </figure>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h2>L'oeuvre</h2>
+                    <p>
+                        I. M. Pei a laissé une marque distinctive sur la ville d'Augusta à travers la création du centre d'accueil des visiteurs
+                        du musée de la Confédération. Ce bâtiment, achevé en 1989, combine habilement le charme historique avec une esthétique
+                        contemporaine. Pei a intégré des éléments modernes dans le contexte historique de la ville, mettant en valeur l'héritage
+                        tout en offrant une expérience accueillante et fonctionnelle aux visiteurs. Cette réalisation témoigne de sa capacité à
+                        marier harmonieusement l'innovation architecturale avec le respect du patrimoine local, enrichissant ainsi le paysage
+                        urbain d'Augusta.
+                    </p>
+                </div>
+                <div>
+                    <h2>Map</h2>
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3327.8471965253693!2d-81.97114172484808!3d33.479328847765466!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88f9cc6f426820c3%3A0x4166b995e66ab2cb!2sAugusta%20Metro%20Chamber%20of%20Commerce!5e0!3m2!1sfr!2sfr!4v1702587448815!5m2!1sfr!2sfr"
+                        width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+                    </iframe>
+                </div>
+                </main>
+                <footer>
+                    <nav>
+                        <ul>
+                            <li><a href="#">Billeterie</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </nav>
+                    <img src="../public/icons/Logo.svg" alt="logo" />
+                    <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au dépatement MMI Montbéliard</p>
+                    <img src="../public/icons/LogoMMI.svg" alt="logo" />
+                
+                </footer>
     </body>
 </html>
