@@ -4,7 +4,7 @@
 
 }
 
-img {
+.carrousel_ecran--image {
     /* image responsive, largeur maxi */
     max-width: 100%;
     /* hauteur "auto" */
