@@ -1,0 +1,63 @@
+* {
+    /* change le box model */
+    box-sizing: border-box;
+
+}
+
+img {
+    /* image responsive, largeur maxi */
+    max-width: 100%;
+    /* hauteur "auto" */
+    height: auto;
+    border-radius: 20px;
+    border: 4px solid #5A2E4E;
+
+}
+
+.carrousel_parent-ecrans {
+    /* aligne horizontalement les enfants */
+    display: flex;
+    /* largeur du parent */
+    width: 100%;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
+    scroll-snap-type: x mandatory;
+
+}
+
+.carrousel_ecran {
+    /* largeur du parent pour chaque enfant */
+    flex: none;
+    /* permet de garder toute la largeur du parent */
+    width: 100%;
+    scroll-snap-align: start
+}
+
+.carrousel_ecran figure {
+    /* enlève les marges par défaut */
+    margin: 0;
+}
+
+.caroussel_liste-liens {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    gap: 1rem;
+
+}
+
+.caroussel_lien {
+    display: inline-block;
+    padding: 10px;
+    margin: 10px;
+    border: 1px solid #000;
+    border-radius: 5px;
+    text-decoration: none;
+    color: #000;
+}
+
+.carrousel {
+    position: relative;
+}
