@@ -7,13 +7,13 @@
     flex-shrink: 0;
     background-color: #FEFEFE;
     display: flex;
-    align-items: center;
+    position: sticky;
 
 }
 
 .header__titre {
     font-family: BhuTuka Expanded One;
-    font-size: 25px;
+    font-size: 13px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -21,7 +21,7 @@
 
 }
 
-.header__logo, .header__menu {
+.header__logo, {
     display: flex;
     width: 48px;
     height: 49px;
