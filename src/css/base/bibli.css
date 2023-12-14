@@ -8,7 +8,7 @@
     /* image responsive, largeur maxi */
     max-width: 90%;
     /* hauteur "auto" */
-    height: auto;
+    height: 220 px;
 
 }
 
@@ -59,4 +59,5 @@
 
 .carrousel {
     position: relative;
+    text-align: center;
 }
