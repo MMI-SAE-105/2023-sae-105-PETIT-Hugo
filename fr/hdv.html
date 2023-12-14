@@ -39,4 +39,70 @@
             </nav>
             <img src="../public/icons/Logo.svg" alt="logo" />
         </div>
+        </div>
+        <div class="carrousel" x-data="{hrefCourant: '#ecran-1',}">
+            <div class="carrousel_parent-ecrans" x-ref="parent"
+                @scroll.debounce.250ms.passive="hrefCourant = '#'+ [...$refs.parent.children].find(e=>e.getBoundingClientRect().x>=0).id">
+                <div id="ecran-1" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/Bibli-JFK1.webp" alt="image bibli 1" class="carrousel_ecran--image">
+                        <figcaption>Swipez pour voir plus</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-2" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/Bibli_JFK2.webp" alt="image bibli 2" class="carrousel_ecran--image">
+                        <figcaption>Swipez pour voir plus</figcaption>
+                    </figure>
+                </div>
+                <div id="ecran-3" class="carrousel_ecran">
+                    <figure>
+                        <img src="../public/img/Bibli_JFK3.webp" alt="image bibli 3" class="carrousel_ecran--image">
+                        <figcaption>Visitez l'expo pout voir plus !</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </div>
+        <div>
+            <h2>L'oeuvre</h2>
+            <p>
+                La John F. Kennedy Presidential Library and Museum à Boston est l'une des réalisations marquantes d'I. M. Pei.
+                Construite entre 1977 et 1979, cette bibliothèque commémore la vie et l'héritage de JFK. Son design audacieux
+                comprend
+                un atrium central octogonal évoquant une roue de bateau, honorant le service naval de Kennedy et la ville
+                portuaire de
+                Boston. Utilisant du béton préfabriqué, Pei a créé des espaces lumineux et spacieux. À l'intérieur, la
+                bibliothèque
+                abrite une vaste collection d'archives et offre une expérience interactive pour comprendre l'histoire de la
+                présidence
+                de Kennedy. Cet édifice emblématique demeure un lieu important de mémoire et d'éducation sur l'histoire
+                américaine grâce
+                à la vision novatrice d'I. M. Pei.
+            </p>
+        </div>
+        <div>
+            <h2>Map</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3306.939831504672!2d-71.03725652011707!3d42.316270743799805!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37ae468290749%3A0x911b0e0aaf975e24!2sJohn%20F.%20Kennedy%20Presidential%20Library%20and%20Museum!5e0!3m2!1sfr!2sfr!4v1702571332607!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+        </div>
+        </main>
+        <footer>
+            <nav>
+                <ul>
+                    <li><a href="#">Billeterie</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <img src="../public/icons/Logo.svg" alt="logo" />
+            <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au dépatement MMI Montbéliard</p>
+            <img src="../public/icons/LogoMMI.svg" alt="logo" />
+        
+        </footer>
+        </body>
+        
+        </html>
+
     </main>
