@@ -13,9 +13,9 @@
 }
 
 .header__titre {
-    margin-left: 50px;
+    /* margin-left: 50px; */
     display: flex;
-    width: 100%;
+    width: 80%;
     height: 101px;
     flex-shrink: 0;
 
@@ -23,7 +23,7 @@
 
 .header__titre--texte {
     font-family: BhuTuka Expanded One;
-    font-size: 25px;
+    font-size: 10px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
@@ -43,9 +43,10 @@
     height: 48px;
     display: flex;
     align-items: center;
-    top: 0; /* Position en haut de la page */
-    left: 0; /* Position à gauche de la page */
+    top: 0;
+    /* Position en haut de la page */
+    left: 0;
+    /* Position à gauche de la page */
     right: 0;
 
 }
-
