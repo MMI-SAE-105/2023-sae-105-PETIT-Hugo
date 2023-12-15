@@ -60,3 +60,16 @@ h2 {
     height: auto;
     margin-left: 15px;
 }
+
+.accordeon {
+    color: #FFF;
+    
+    text-align: left;
+    /* Grand Texte */
+    font-family: BhuTuka Expanded One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 42px */
+}

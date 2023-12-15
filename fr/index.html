@@ -67,7 +67,8 @@
             <p>Du <span> 13 avril</span></p>
             <p>Au <span> 23 juin</span></p>
         </div>
-        <div>
+        <h2>Nos Tarifs</h2>
+        <div class="accordeon">
             <dl x-data="{isOpen:false}">
                 <dt @click="isOpen = !isOpen ">Plein tarif</dt>
                 <dd x-show="isOpen" x-transition.duration.500ms>11€
