@@ -64,7 +64,6 @@ p {
 }
 
 .element__gauche--photo {
-    position: relative;
     width: 271px;
     height: 186px;
     flex-shrink: 0;
@@ -75,14 +74,12 @@ p {
 }
 
 .element__droite--photo {
-    position: relative;
     width: 271px;
     height: 186px;
     flex-shrink: 0;
 }
 
 .element__droite--bouton {
-    position: absolute;
     width: 207px;
     height: 73px;
     flex-shrink: 0;
@@ -97,7 +94,6 @@ p {
 }
 
 .element__gauche--bouton {
-    position: absolute;
     width: 207px;
     height: 73px;
     flex-shrink: 0;
