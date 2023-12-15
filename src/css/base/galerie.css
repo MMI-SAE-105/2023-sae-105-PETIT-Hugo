@@ -64,6 +64,7 @@ p {
 }
 
 .element__gauche--photo {
+    margin-left: 105px;
     width: 271px;
     height: 186px;
     flex-shrink: 0;
@@ -105,5 +106,5 @@ p {
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
-    margin-left: 100px;
+    margin-left: 180px;
 }
