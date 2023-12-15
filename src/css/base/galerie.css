@@ -35,11 +35,30 @@ p {
     position: fixed;
     top: 0;
     right: 0;
-    width: 2px;
-    margin-right: 20px;
+    width: 3px;
+    margin-right: 17px;
     /* Largeur de la barre */
     height: 120vh;
     /* Hauteur à 100% de la hauteur de la fenêtre */
     background-color: #FEFEFE;
     z-index: -1;
+}
+
+.element--date {
+    display: flex;
+    width: 63px;
+    height: 30px;
+    flex-direction: column;
+    justify-content: center;
+    flex-shrink: 0;
+    color: #FFF;
+    
+    text-align: center;
+    font-family: BhuTuka Expanded One;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    margin-left: 325px;
+
 }
