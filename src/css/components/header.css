@@ -24,11 +24,12 @@
 
 .header__titre--texte {
     font-family: BhuTuka Expanded One;
-    font-size: 10px;
+    font-size: 30px;
     font-style: normal;
     font-weight: 400;
     line-height: 140%;
     text-align: center;
+    color: #000000;
 
 }
 
@@ -48,6 +49,6 @@
     /* Position en haut de la page */
     left: 0;
     /* Position à gauche de la page */
-    right: 0;
+    right: 0px;
 
 }
