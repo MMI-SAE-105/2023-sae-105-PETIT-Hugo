@@ -9,3 +9,21 @@ body {
 main {
     padding: 20px;
 }
+
+.carrousel_ecran--image {
+    flex-shrink: 0;
+    border-radius: 4px;
+}
+
+.carrousel_ecran--caption {
+        color: #FFF;
+        
+        text-align: center;
+        /* Description image */
+        font-family: BhuTuka Expanded One;
+        font-size: 13px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 140%;
+        /* 18.2px */
+}
