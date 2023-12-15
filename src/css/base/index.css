@@ -19,6 +19,7 @@ h1 {
     /* 49px */
 }
 
+
 h2 {
     color: #FFF;
     
@@ -32,6 +33,18 @@ h2 {
     /* 49px */
 }
 
+.header__titre--texte {
+    color: #000;
+    
+    text-align: center;
+    /* Titre 2 */
+    font-family: BhuTuka Expanded One;
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 49px */
+}
 .accueil__photo {
     width: 100%;
     height: auto;
@@ -72,4 +85,25 @@ h2 {
     font-weight: 400;
     line-height: 140%;
     /* 42px */
+}
+
+.billeterie__button {
+display: flex;
+width: 287.097px;
+height: 44px;
+flex-direction: column;
+justify-content: center;
+flex-shrink: 0;
+margin-left: 125px;
+color: #000;
+
+text-align: center;
+/* Grand Texte */
+font-family: BhuTuka Expanded One;
+font-size: 30px;
+font-style: normal;
+font-weight: 400;
+line-height: 140%;
+/* 42px */
+
 }
