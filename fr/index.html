@@ -68,13 +68,28 @@
             <p>Au <span> 23 juin</span></p>
         </div>
         <div>
-            <ul>
-                <li>Plein Tarif 11€</li>
-                <li>Tarif réduit 7,50€</li>
-                <li>13 - 25 ans 5€</li>
-                <li>Spécial (conditions) 0€</li>
-                <li>Cartier Pass</li>
-                <li>18€ - 50€</li>
+            <dl x-data="{isOpen:false}">
+                <dt><button @click="isOpen = !isOpen ">Plein tarif</button></dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>11€
+                </dd>
+            </dl>
+            <dl x-data="{isOpen:false}">
+                <dt><button @click="isOpen = !isOpen ">Tarif réduit</button></dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>7,50€
+                </dd>
+            </dl>
+            <dl x-data="{isOpen:false}">
+                <dt><button @click="isOpen = !isOpen ">Réduction 13 - 25 ans</button></dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>5€</dd>
+            </dl>
+            <dl x-data="{isOpen:false}">
+                <dt><button @click="isOpen = !isOpen ">Fondation Cartier Pass</button></dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>18€ - 50€</dd>
+            </dl>
+            <dl x-data="{isOpen:false}">
+                <dt><button @click="isOpen = !isOpen ">Moins de 13 ans</button></dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>Gratuit</dd>
+            </dl>
         </div>
         <button>Billeterie <img src="../public/icons/fleche.svg"></button>
     </main>

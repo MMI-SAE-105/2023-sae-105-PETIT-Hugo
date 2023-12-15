@@ -42,7 +42,9 @@
     height: 48px;
     display: flex;
     align-items: center;
-
+top: 0; /* Position en haut de la page */
+    left: 0; /* Position à gauche de la page */
+    right: 0;
 
 }
 
