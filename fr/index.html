@@ -69,25 +69,25 @@
         </div>
         <div>
             <dl x-data="{isOpen:false}">
-                <dt><button @click="isOpen = !isOpen ">Plein tarif</button></dt>
+                <dt @click="isOpen = !isOpen ">Plein tarif</dt>
                 <dd x-show="isOpen" x-transition.duration.500ms>11€
                 </dd>
             </dl>
             <dl x-data="{isOpen:false}">
-                <dt><button @click="isOpen = !isOpen ">Tarif réduit</button></dt>
+                <dt @click="isOpen = !isOpen ">Tarif réduit</dt>
                 <dd x-show="isOpen" x-transition.duration.500ms>7,50€
                 </dd>
             </dl>
             <dl x-data="{isOpen:false}">
-                <dt><button @click="isOpen = !isOpen ">Réduction 13 - 25 ans</button></dt>
+                <dt @click="isOpen = !isOpen ">Réduction 13 - 25 ans</dt>
                 <dd x-show="isOpen" x-transition.duration.500ms>5€</dd>
             </dl>
             <dl x-data="{isOpen:false}">
-                <dt><button @click="isOpen = !isOpen ">Fondation Cartier Pass</button></dt>
+                <dt @click="isOpen = !isOpen ">Fondation Cartier Pass</dt>
                 <dd x-show="isOpen" x-transition.duration.500ms>18€ - 50€</dd>
             </dl>
             <dl x-data="{isOpen:false}">
-                <dt><button @click="isOpen = !isOpen ">Moins de 13 ans</button></dt>
+                <dt @click="isOpen = !isOpen ">Moins de 13 ans</dt>
                 <dd x-show="isOpen" x-transition.duration.500ms>Gratuit</dd>
             </dl>
         </div>
