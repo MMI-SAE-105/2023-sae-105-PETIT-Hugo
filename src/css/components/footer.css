@@ -9,6 +9,7 @@
     flex-direction: column;
     flex-shrink: 0;
     background-color: #FEFEFE;
+    z-index: 1;
 }
 
 .footer__liens--texte {

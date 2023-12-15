@@ -38,8 +38,8 @@ p {
     width: 2px;
     margin-right: 20px;
     /* Largeur de la barre */
-    height: 100vh;
+    height: 120vh;
     /* Hauteur à 100% de la hauteur de la fenêtre */
-    background-color: white;
+    background-color: #FEFEFE;
     z-index: -1;
 }
