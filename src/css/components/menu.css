@@ -53,3 +53,20 @@ nav>ul>li>a {
     text-decoration: none;
 }
 
+.menu--logosite {
+    width: 80%;
+    height: auto;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
+.menu__header--croix {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    width: 30px;
+    height: 30px;
+    flex-shrink: 0;
+    padding: 20px;
+}
+
