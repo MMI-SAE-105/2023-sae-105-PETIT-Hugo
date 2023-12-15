@@ -2,7 +2,6 @@
 @import url("https://fonts.cdnfonts.com/css/helvetica-neue-5");
 
 .footer {
-    margin-top: 40px;
     display: flex;
     width: 100%;
     height: auto + 20px;
