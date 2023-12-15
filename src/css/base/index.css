@@ -6,16 +6,35 @@ body {
     background-color: #2D2D2D;
 }
 
+h1 {
+    
+}
+
 .accueil__photo {
     width: 100%;
     height: auto;
 }
 
-.accueil__photo--caption {
+.accueil__photo--caption, .lieu__frame--caption {
+    color: #FFF;
     
+    text-align: center;
+    /* Description image */
+    font-family: BhuTuka Expanded One;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 140%;
+    /* 18.2px */
+
+}
+
+.lieu {
+    justify-content: center;
 }
 
 .lieu__frame {
     width: 90%;
     height: auto;
+    margin-left: 15px;
 }
