@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="fr" x-data="{menuIsOpen: false}">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>I. M. PERIAL</title>
+    <script defer src="https://unpkg.com/alpinejs"></script>
+    <link href="../src/css/components/header.css" rel="stylesheet">
+    <link href="../src/css/base/index.css" rel="stylesheet">
+    <link href="../src/css/components/menu.css" rel="stylesheet">
+    <link href="../src/css/components/footer.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <header class="header">
+        <div class="header__logo">
+            <img src="../public/icons/Logo.svg" alt="logo" />
+        </div>
+        <div class="header__titre">
+            <h1 class="header__titre--texte">I. M. PERIAL</h1>
+        </div>
+        <img src="../public/icons/menu.svg" alt="menu" 
+        aria-controls="mainNav"
+        @click="menuIsOpen = !menuIsOpen"
+        class="header__menuBtn"/>
+
+            
+        <div 
+        id="mainNav" 
+            x-show="menuIsOpen" 
+            x-transition.duration.200ms
+            class="menu">
+            <nav>
+                <h1 class="menu__header--titre">I. M. PERIAL</h1>
+                <img src="../public/icons/croix.svg" alt="croix" class="menu__header--croix"
+                aria-controls="mainNav"
+                @click="menuIsOpen = !menuIsOpen"/>
+                <ul>
+                    <li><a href="../fr/impei.html">I. M. Pei</a></li>
+                    <li><a href="../fr/galerie.html">Galerie</a></li>
+                    <li><a href="../fr/billeterie.html">Billeterie</a></li>
+                </ul>
+            </nav>
+            <img src="../public/icons/Logo.svg" alt="logo" />
+        </div>
+
+    </header>
+    <main>
+        <div class="accueil">
+            <h1>Découvrez I. M. Pei</h1>
+            <figure>
+            <img src="../public/img/pei1.webp" alt="pei" class="accueil__photo" />
+            <figcaption class="accueil__photo--caption">I. M. Pei</figcaption>
+            </figure>
+        </div>
+        <div class="lieu">
+            <h2 class="lieu__titre">Où ?</h2>
+            <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2626.0966455014277!2d2.3293401760180177!3d48.8372952021914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47e671c80c12b47d%3A0x225ddbf564cf5d5a!2sFondation%20Cartier%20pour%20l&#39;art%20contemporain!5e0!3m2!1sfr!2sfr!4v1702484643513!5m2!1sfr!2sfr"
+                width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade" class="lieu__frame"></iframe>
+            <p class="lieu__frame--caption">Fondation Cartier, 261 Bd Raspail, 75014 Paris</p>
+        </div>
+        <div>
+            <h2>Quand ?</h2>
+            <p>Du <span> 13 avril</span></p>
+            <p>Au <span> 23 juin</span></p>
+        </div>
+        <h2>Nos Tarifs</h2>
+        <div class="accordeon">
+            <dl x-data="{isOpen:false}">
+                <dt @click="isOpen = !isOpen ">Plein tarif</dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>11€
+                </dd>
+            </dl>
+            <dl x-data="{isOpen:false}">
+                <dt @click="isOpen = !isOpen ">Tarif réduit</dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>7,50€
+                </dd>
+            </dl>
+            <dl x-data="{isOpen:false}">
+                <dt @click="isOpen = !isOpen ">Réduction 13 - 25 ans</dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>5€</dd>
+            </dl>
+            <dl x-data="{isOpen:false}">
+                <dt @click="isOpen = !isOpen ">Fondation Cartier Pass</dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>18€ - 50€</dd>
+            </dl>
+            <dl x-data="{isOpen:false}">
+                <dt @click="isOpen = !isOpen ">Moins de 13 ans</dt>
+                <dd x-show="isOpen" x-transition.duration.500ms>Gratuit</dd>
+            </dl>
+        </div>
+        <button class="billeterie__button">Billeterie</button>
+    </main>
+    <footer class="footer">
+        <nav>
+            <ul class="footer__liens">
+                <li><a href="../fr/billetrie.html" class="footer__liens--texte">Billeterie</a></li>
+                <li><a href="../fr/contact.html" class="footer__liens--texte">Contact</a></li>
+            </ul>
+        </nav>
+        <img src="../public/icons/Logo.svg" alt="logo" class="footer__logosite" />
+        <p class="footer__mentions">Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au dépatement MMI Montbéliard</p>
+        <img src="../public/icons/LogoMMI.svg" alt="logo" class="footer__logommi"/>
+
+    </footer>
+
+
+
+</body>
