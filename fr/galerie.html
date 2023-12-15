@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" x-data="{menuIsOpen: false}">
 
 <head>
     <meta charset="UTF-8" />
@@ -7,110 +7,113 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>I. M. PERIAL</title>
     <script defer src="https://unpkg.com/alpinejs"></script>
-        <link href="../src/css/base/galerie.css" rel="stylesheet">
-        <link href="../src/css/components/menu.css" rel="stylesheet">
-        <link href="../src/css/components/footer.css" rel="stylesheet">
+    <link href="../src/css/base/galerie.css" rel="stylesheet">
+    <link href="../src/css/components/header.css" rel="stylesheet">
+    <link href="../src/css/components/footer.css" rel="stylesheet">
 </head>
 
 <body>
     <header class="header">
         <div class="header__logo">
-            <a href="./index.html">
-                <img src="../public/icons/Logo.svg" alt="logo" />
+            <a href="../fr/index.html">
+            <img src="../public/icons/Logo.svg" alt="logo"/>
             </a>
         </div>
         <div class="header__titre">
             <h1 class="header__titre--texte">I. M. PERIAL</h1>
-            <div class="header__menu">
-                <img src="../public/icons/menu.svg" alt="menu" />
-            </div>
         </div>
-    </header>
-    <main>
-        <h1>Galerie</h1>
-        <div class="menu">
-            <div class="menu__header">
-                <h1 class="menu__header--titre">I. M. PERIAL</h1>
-                <img src="../public/icons/croix.svg" alt="croix" />
-            </div>
+        <img src="../public/icons/menu.svg" alt="menu" aria-controls="mainNav" @click="menuIsOpen = !menuIsOpen"
+            class="header__menuBtn" />
+    
+    
+        <div 
+        id="mainNav" x-show="menuIsOpen" 
+        x-transition.duration.200ms class="menu">
             <nav>
+                <h1 class="menu__header--titre">I. M. PERIAL</h1>
+                <img src="../public/icons/croix.svg" alt="croix" class="menu__header--croix" aria-controls="mainNav"
+                    @click="menuIsOpen = !menuIsOpen" />
                 <ul>
-                    <li><a href="./impei.html">I. M. Pei</a></li>
-                    <li><a href="./galerie.html">Galerie</a></li>
-                    <li><a href="#">Billeterie</a></li>
+                    <li><a href="../fr/impei.html">I. M. Pei</a></li>
+                    <li><a href="../fr/galerie.html">Galerie</a></li>
+                    <li><a href="../fr/billeterie.html">Billeterie</a></li>
                 </ul>
             </nav>
             <img src="../public/icons/Logo.svg" alt="logo" />
         </div>
+    </header>
+    <main>
+        <h1>Galerie</h1>
         <p>Profitez d’un premier aperçu des oeuvres de I. M. PEI à travers cette galerie virtuelle</p>
-        <div>
-            <p>1963</p>
-            <img src="../public/img/Bibli-JFK1.webp" alt="bibli" />
+        <div class="element__gauche">
+            <p class="element--date">1963</p>
+            <img src="../public/img/Bibli-JFK1.webp" alt="bibli" class="element__gauche--photo"/>
             <a href="../fr/bibli.html">
-            <button>Bibliothèque Kennedy (Boston)</button>
+            <button class="element__gauche--bouton">Bibliothèque Kennedy (Boston)</button>
             </a>
         </div>
-        <div>
-            <p>1964</p>
-            <img src="../public/img/hdv-dallas1.webp" alt="hdvDallas" />
+        <div class="element__droite">
+            <p class="element--date">1964</p>
+            <img src="../public/img/hdv-dallas1.webp" alt="hdvDallas" class="element__droite--photo"/>
             <a href="../fr/hdv.html">
-                <button>Hotêl de ville de Dallas</button>
+                <button class="element__droite--bouton">Hotêl de ville de Dallas</button>
             </a>
 
         </div>
-        <div>
-            <p>1968</p>
-            <img src="../public/img/Providence1.webp" alt="providence" />
+        <div class="element__provi">
+            <p class="element--date">1968</p>
+            <img src="../public/img/Providence1.webp" alt="providence" class="element__provi"/>
             <a href="../fr/providence.html">
                 <button>Cathédrale de Providence</button>
             </a>
         </div>
         <div>
-            <p>1974</p>
-            <img src="../public/img/Augusta1.webp" alt="augusta" />
+            <p class="element__droite">1974</p>
+            <img src="../public/img/Augusta1.webp" alt="augusta" class="element__droite--photo"/>
             <a href="../fr/augusta.html">
-                <button>Augusta, Georgie</button>
+                <button class="element__droite--bouton">Augusta, Georgie</button>
             </a>
         </div>
         <div>
-            <p>1976</p>
-            <img src="../public/img/Hancock1.webp" alt="bibli" />
+            <p class="element--date">1976</p>
+            <img src="../public/img/Hancock1.webp" alt="bibli"/>
             <a href="../fr/hancock.html">
             <button>Tour Hancock (Boston)</button>
             </a>
         </div>
-        <div>
-            <p>1978</p>
-            <img src="../public/img/Gallerie1.webp" alt="bibli" />
+        <div class="element__droite">
+            <p class="element--date">1978</p>
+            <img src="../public/img/Gallerie1.webp" alt="bibli" class="element__droite--photo" />
             <a href="../fr/galerieNat.html">
-            <button>Galerie Nationale (Boston)</button>
+            <button class="element__droite--bouton">Galerie Nationale (Boston)</button>
             </a>
         </div>
         <div>
-            <p>1982</p>
+            <p class="element--date">1982</p>
             <img src="../public/img/parc1.webp" alt="Parc" />
             <a href="../fr/parc.html">
             <button>Parc Xiangshan (Pékin)</button>
             </a>
         </div>
-        <div>
-            <p>1988</p>
-            <img src="../public/img/Louvre1.webp" alt="louvre" />
+        <div class="element__droite">
+            <p class="element--date">1988</p>
+            <img src="../public/img/Louvre1.webp" alt="louvre" class="element__droite--photo"/>
             <a href="../fr/louvre.html">
-            <button>Grand Louvre (Paris)</button>
+            <button class="element__droite--bouton">Grand Louvre (Paris)</button>
             </a>
         </div>
     </main>
-    <footer>
+    <footer class="footer">
         <nav>
-            <ul>
-                <li><a href="#">Billeterie</a></li>
-                <li><a href="#">Contact</a></li>
+            <ul class="footer__liens">
+                <li><a href="../fr/billetrie.html" class="footer__liens--texte">Billeterie</a></li>
+                <li><a href="../fr/contact.html" class="footer__liens--texte">Contact</a></li>
             </ul>
         </nav>
-        <img src="../public/icons/Logo.svg" alt="logo" />
-        <p>Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au dépatement MMI Montbéliard</p>
-        <img src="../public/icons/LogoMMI.svg" alt="logo" />
+        <img src="../public/icons/Logo.svg" alt="logo" class="footer__logosite" />
+        <p class="footer__mentions">Ce site est un projet réalisé dans le cadre d’un exercice pédagogique au dépatement MMI
+            Montbéliard</p>
+        <img src="../public/icons/LogoMMI.svg" alt="logo" class="footer__logommi" />
     
     </footer>
     </body>

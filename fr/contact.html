@@ -22,9 +22,6 @@
                 <img src="../public/icons/menu.svg" alt="menu" />
             </div>
         </div>
-    </header>
-    <main>
-        <h1>Contact</h1>
         <div class="menu">
             <div class="menu__header">
                 <h1 class="menu__header--titre">I. M. PERIAL</h1>
@@ -39,4 +36,40 @@
             </nav>
             <img src="../public/icons/Logo.svg" alt="logo" />
         </div>
+    </header>
+    <main>
+        <h1>Contact</h1>
+        <main>
+            <section>
+                <div>
+                    <h2>Contact</h2>
+                </div>
+                <p>
+                    Pour une question ou demande particulière, contactez nous via ce formulaire, nous vous répondrons sous 48h
+                </p>
+                </div>
+            </section>
+            <section>
+                <form>
+                    <div>
+                        <label for="nom">Votre adresse email</label>
+                        <input type="text" name="nom" id="nom" />
+                    </div>
+                    <div>
+                        <label for="email">objet</label>
+                        <input type="text" name="email" id="email" />
+                    </div>
+                    <div>
+                        <label for="message">Votre message</label>
+                        <textarea id="message" name="message" rows="5"></textarea>
+                    </div>
+                    <div>
+                        <button type="submit">Envoyer</button>
+                    </div>
+                    <div>
+                        <p x-show="!menuIsOpen"></p>
+                    </div>
+                </form>
+            </section>
+        </main>
     </main>
